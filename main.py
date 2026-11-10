@@ -4,7 +4,7 @@ import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TOKEN = os.environ["_BOT_TOKEN"]
 CHANNEL = os.environ["CHANNEL_ID"]
 
 def get_news():
