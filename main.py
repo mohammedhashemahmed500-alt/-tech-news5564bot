@@ -11,8 +11,8 @@ def get_news():
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({
         "q": "technology OR artificial intelligence",
         "hl": "ar",
-        "gl": "SD",
-        "ceid": "SD:ar"
+        "gl": "EG",
+        "ceid": "EG:ar"
     })
 
     request = urllib.request.Request(
