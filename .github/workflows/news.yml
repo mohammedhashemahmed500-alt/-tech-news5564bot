@@ -2,13 +2,14 @@ name: Tech News Bot
 
 on:
   schedule:
-    - cron:'0 17 * * *'
+    - cron: '0 17 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   publish-news:
     runs-on: ubuntu-latest
-
     steps:
       - name: Get project
         uses: actions/checkout@v4
