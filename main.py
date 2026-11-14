@@ -1,11 +1,10 @@
-import os
+i8import os
 import json
 import urllib.request
 import urllib.parse
-import xml.etree.ElementTree as ET
-
-TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-CHANNEL = os.environ["CHANNEL_ID"]
+import xml.etree.ElementTree as E
+TOKEN = os.environ["TELEGRAM_BOT_TOKEN"].strip()
+CHANNEL = os.environ["CHANNEL_ID"].strip()
 
 def get_news():
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({
