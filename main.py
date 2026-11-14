@@ -1,8 +1,8 @@
-i8import os
+import os
 import json
 import urllib.request
 import urllib.parse
-import xml.etree.ElementTree as E
+import xml.etree.ElementTree as ET
 TOKEN = os.environ["TELEGRAM_BOT_TOKEN"].strip()
 CHANNEL = os.environ["CHANNEL_ID"].strip()
 
